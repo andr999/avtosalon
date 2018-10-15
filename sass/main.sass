@@ -1,0 +1,423 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+.hidden 
+	display: none;
+
+.carousel img 
+	width: 100%;
+	height: auto;
+
+.parallax 
+	background-attachment: fixed;
+	background-position: 50% 0;
+	position: relative;
+header 
+	background-image: url(../img/top_bg.jpg)
+	min-height: 644px
+	background-repeat: repeat-x
+	background-position: top center
+	position: relative
+	font-family: "BebasBold", sans-serif
+	.button 
+		margin-right: 20px
+	h1 
+		text-align: center
+		color: #fff
+		margin-top: 60px
+		font-size: 40px
+		text-shadow: 0 3px rgba(0,0,0, .55)
+		font-family: "BebasRegular", sans-serif
+	.top_line 
+		min-height: 97px
+		box-shadow: rgba(255,255,255, .3) 0 0 0 1px
+		width: 100%
+		background-color: rgba(0,0,0, .6)
+		padding: 22px 0
+		a 
+			font-size: 21px
+			border-bottom: #fff dashed 1px
+			transition: all .5s ease
+			&:hover
+				border-bottom: transparent
+		a.logo 
+			border-bottom: none
+		.logo_wrap 
+			position: relative
+			width: 240px
+			margin: auto
+			.logo 
+				position: absolute
+				margin-top: -18px
+	.top_addr 
+		padding-left: 50px
+		background-image: url(../img/top_map.png)
+		background-repeat: no-repeat
+		background-position:  left top
+		line-height: 26px
+		strong 
+			display: block
+			color: #d12f22
+			text-transform: uppercase
+			font-weight: normal
+			font-size: 32px
+	a 
+		color: #fff
+		&:hover 
+			color: #fff
+			text-decoration: none
+.ta_right 
+	background-image: none
+	padding-left: 0
+	span 
+		color: #fff
+
+.button 
+	display: inline-block
+	background-color: #d12f22
+	height: 50px
+	vertical-align: middle
+	line-height: 50px
+	padding: 0 25px
+	font-size: 20px
+	border-bottom: 4px solid #ac160a
+	color: #fff
+	font-family: "BebasBold", sans-serif
+	&:hover 
+		background-color: #e64437
+		
+	&:active 
+		background-color: #b81609
+	&:focus 
+		color: #fff
+
+.st_button 
+	line-height: 18px
+	padding-top: 7px
+	text-align: left
+	padding-left: 63px
+	background-image: url(../img/camera.png)
+	background-repeat: no-repeat
+	background-position: 8px 8px
+.buttons_top 
+	position: absolute
+	width: 100%
+	bottom: 32px
+nav.top_mnu 
+	margin-top: -15px
+	height: 72px
+	background-color: #242424
+	box-shadow: rgba(255,255,255, .3) 0 0 0 1px
+	font-family: "BebasRegular", sans-serif
+	text-transform: uppercase
+	font-size: 20px
+	ul 
+		margin: 0
+		padding: 0
+		list-style-type: none
+		height: 100%
+	a 
+		color: #fff
+		padding: 0 26px 0 54px
+		display: block
+		line-height: 62px
+		border-left: #3b3b3b 1px solid
+		background-image: url(../img/top_mnu_iconset.png)
+		background-repeat: no-repeat
+		background-position: 10px 18px
+		&:hover, &:focus 
+			text-decoration: none
+	li 
+		float: left
+		&:nth-child(2) a 
+			background-position: 15px -45px
+		&:nth-child(3) a
+			background-position: 20px -110px
+		&:nth-child(4) a
+			background-position: 15px -180px
+		&:nth-child(5) a
+			background-position: 15px -260px
+		&:nth-child(6) a
+			background-position: 15px -335px
+.top_mnu li.active a, .top_mnu li:hover a 
+	background-color: #050505
+.warranty 
+	float: right
+	color: #fff
+	cursor: default
+	font-size: 15px
+	border: 3px solid #fff
+	border-radius: 3px
+	padding: 3px 5px
+	line-height: 16px
+	margin-top: 15px
+.w_left 
+	font-family: "BebasBold", sans-serif
+	font-size: 20px
+	margin-top: 10px
+	margin-right: 8px
+	span 
+		font-size: 34px
+
+.w_left, .w_right 
+	display: inline-block
+	vertical-align: top
+.w_right 
+	font-family: "RobotoCondensedRegular", sans-serif
+.main_cats 
+	background-color: #191919
+	padding: 20px 0 32px
+	h2 
+		text-transform: uppercase
+		color: #c9c9c9
+		font-family: "BebasRegular", sans-serif
+		font-size: 40px
+		text-align: center
+		strong 
+			color: #fff
+		span 
+			color: #d12f22
+section h2, article h2
+		position: relative
+.s_black 
+	h2::before 
+		content: ""
+		position: absolute
+		width: 50px
+		height: 60px
+		background-image: url('../img/heder_img.png')
+		margin-left: -68px
+	h2::after 
+		content: ""
+		position: absolute
+		width: 50px
+		height: 60px
+		background-image: url('../img/heder_img.png')
+		margin-left: 15px
+		margin-top: 5px
+		transform: rotate(180deg)
+.mc_item 
+	border: #353535 1px solid
+	border-radius: 2px
+	span 
+		display: block
+		height: 100px
+		width: 130px
+		background-image: url('../img/cats_iconset.png')
+		margin: 15px auto 0
+	h4 
+		font-weight: normal
+		font-family: "BebasBold", sans-serif
+		font-size: 20px
+		margin-top: 5px
+		margin-bottom: 5px
+	a:hover h4
+		text-decoration: underline
+.mc_item_wrap 
+	margin-left: 30px
+	width: 160px
+	display: inline-block
+	text-align: center
+	&.active h4
+		text-decoration: underline
+	&.active, &:hover
+		background-color: #2a2a2a
+	&:nth-child(1) 
+		margin-left: 0
+	a 
+		color: #fff
+	&:nth-child(1) span 
+		background-position: 9px 0px
+	&:nth-child(2) span 
+		background-position: -120px 0px
+	&:nth-child(3) span 
+		background-position: -260px 0px
+	&:nth-child(4) span 
+		background-position: -392px 0px
+	&:nth-child(5) span 
+		background-position: -528px 0px
+	&:nth-child(6) span 
+		background-position: -660px 0px
+	.mc_toggle 
+		background-color: #212121
+		height: 25px
+		position: relative
+		cursor: pointer
+		background-image: url('../img/mc_arr.png')
+		background-repeat: no-repeat
+		background-position: 73px 9px
+	&.active .mc_toggle, &:hover .mc_toggle
+		background-color: #353535
+		background-position: -118px 10px
+	ul 
+		position: absolute
+		width: 100%
+		margin: 0
+		padding: 15px 0
+		list-style-type: none
+		font-size: 20px
+		background-color: #353535
+		margin-top: 25px
+		z-index: 10
+		display: none
+		left: 0
+		li 
+			display: inline-block
+			font-family: "BebasRegular", sans-serif
+			a 
+				padding: 0 10px
+				text-decoration: underline
+				&:hover 
+					text-decoration: none
+					
+.mc_wrap 
+	text-align: center
+	padding: 0
+	position: relative
+.mc_item_wrap_af 
+	content: ''
+	width: 22px
+	height: 10px
+	background-image: url('../img/mc_ch_arr.png')
+	position: absolute
+	margin: 16px 69px
+	display: none
+.mc_button_w 
+	text-align: center
+	margin-top: 30px
+article.content 
+	background-color: #e9e9e9
+	h2.art_header::before 
+		content: ""
+		position: absolute
+		width: 50px
+		height: 60px
+		background-image: url('../img/art_img.png')
+		margin-left: -68px
+		background-repeat: no-repeat
+		transform: rotate(180deg)
+		top: -15px
+	h2.art_header::after 
+		content: ""
+		position: absolute
+		width: 50px
+		height: 60px
+		background-image: url('../img/art_img.png')
+		margin-left: 15px
+		margin-top: 25px
+		background-repeat: no-repeat
+	h2 
+		text-transform: uppercase
+		color: #050505
+		font-family: "BebasRegular", sans-serif
+		font-size: 40px
+		text-align: center
+		margin-bottom: 10px
+	p.h_desc 
+		max-width: 790px
+		text-align: center
+		margin: auto
+		margin-top: 0
+		color: #050505
+	.home_items 
+		background-color: #d6d6d6
+		padding: 40px 0
+		margin-top: 40px
+		.hi_item 
+			margin-bottom: 50px
+			img 
+				max-width: 100%
+				border-top: 8px solid #ac160a
+				
+				
+			p 
+				color: #050505
+				font-size: 14px
+				text-align: center
+.s_bottom 
+	padding-top: 32px
+	img 
+		max-width: 100%
+		display: block
+		position: absolute
+		margin-top: 30px
+	.sb_header 
+		h2 
+			margin: 0
+			text-transform: uppercase
+			font-family: "BebasRegular", sans-serif
+			font-size: 36px
+	.sb_content 
+		margin-top: 30px
+		p 
+			margin-bottom: 0
+			padding-bottom: 10px
+	.sb_header.but_cont 
+		text-align: right
+footer 
+	background-color: #2a2a2a
+	color: #fff
+	padding: 28px 0 35px
+	font-family: "BebasBold", sans-serif
+	font-size: 20px
+	a 
+		color: #fff
+		text-decoration: underline
+		&:hover 
+			text-decoration: none
+			color: #fff
+	ul 
+		list-style-type: none
+		margin: 0
+		padding: 0
+		li 
+			float: left
+			a 
+				padding: 0 15px
+
+		
+
+
+	
+
+@import "media" // Всегда в конце
